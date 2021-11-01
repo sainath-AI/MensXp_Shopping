@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.masai.sainath.mensxp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.masai.sainath.mensxp.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/myStoreFragment"
+        android:name="com.masai.sainath.mensxp.MyStoreFragment"
+        android:label="fragment_my_store"
+        tools:layout="@layout/fragment_my_store" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.masai.sainath.mensxp.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/youFragment"
+        android:name="com.masai.sainath.mensxp.YouFragment"
+        android:label="fragment_you"
+        tools:layout="@layout/fragment_you" />
+</navigation>
