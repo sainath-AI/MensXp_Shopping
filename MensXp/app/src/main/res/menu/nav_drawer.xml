@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+<group android:checkableBehavior="single">
+
+    <item android:title="Notification"
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/notification"
+
+        />
+
+    <item android:title="My Orders"
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/giftbox"
+
+        />
+    <item android:title="My Cart"
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/yourcart"
+
+        />
+
+    <item android:title="WishList"
+        android:id="@+id/nav_wishList"
+        android:icon="@drawable/heart"
+
+        />
+    <item android:title="Edit Profile"
+        android:id="@+id/nav_editprofile"
+        android:icon="@drawable/useraccount"
+
+        />
+
+
+    <item android:title="BookMarks"
+        android:id="@+id/nav_bookmarks"
+        android:icon="@drawable/bookmark"
+
+        />
+
+    <item android:title="My Address"
+        android:id="@+id/nav_address"
+        android:icon="@drawable/location"
+        />
+
+    <item android:title="    Terms And Conditions"
+        android:id="@+id/nav_Terms"
+
+        />
+
+    <item android:title="    Privacy policy "
+        android:id="@+id/nav_policy"
+
+        />
+    <item android:title="    Love our App?"
+        android:id="@+id/nav_loveApp"
+
+        />
+    <item android:title="    Invite Friends"
+        android:id="@+id/nav_inviteFrnds"
+
+        />
+    <item android:title="    Log Out"
+        android:id="@+id/nav_logout"
+
+        />
+
+
+
+
+
+
+
+
+
+</group>
+
+
+
+
+
+
+
+</menu>

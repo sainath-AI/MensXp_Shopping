@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profilepic"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/usermenxzp"
+
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profilepic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:textSize="24dp"
+        android:text="Sai Reddy"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/phNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toEndOf="@id/profilepic"
+        android:layout_marginStart="20dp"
+        android:textSize="18dp"
+        android:text="6464633103"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+
+
+
+</RelativeLayout>
