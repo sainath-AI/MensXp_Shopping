@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_bookmarks->{
-                    intent= Intent(this,BookMarks::class.java)
+                    intent= Intent(this,OrdersActivity::class.java)
                     startActivity(intent)
 
                     true
@@ -141,8 +141,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_logout->{
-                    intent= Intent(this,MyAddress::class.java)
-                    startActivity(intent)
+
 
                     true
                 }

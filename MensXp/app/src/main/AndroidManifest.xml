@@ -20,9 +20,7 @@
         <activity
             android:name=".MyAddress"
             android:exported="true" />
-        <activity
-            android:name=".BookMarks"
-            android:exported="true" />
+
         <activity
             android:name=".EditProfileAcitivity"
             android:exported="true" />
