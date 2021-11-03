@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MensXp">
         <activity
+            android:name=".EditAddress"
+            android:exported="false" />
+        <activity
             android:name=".TermsAndCoditions"
             android:exported="false" />
         <activity
@@ -20,7 +23,6 @@
         <activity
             android:name=".MyAddress"
             android:exported="true" />
-
         <activity
             android:name=".EditProfileAcitivity"
             android:exported="true" />

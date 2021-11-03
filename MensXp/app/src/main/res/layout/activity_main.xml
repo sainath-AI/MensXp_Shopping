@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
+
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -66,6 +68,9 @@
         </androidx.cardview.widget.CardView>
 
 
+
+
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/BottomNavView"
             android:layout_width="match_parent"
@@ -90,7 +95,10 @@
         android:id="@+id/navview1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_drawer" />
+
+
 </androidx.drawerlayout.widget.DrawerLayout>

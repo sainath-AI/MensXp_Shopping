@@ -1,30 +1,27 @@
 package com.masai.sainath.mensxp
 
+import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
+
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.navview1
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
 
+    @SuppressLint("RtlHardcoded")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         toggle = ActionBarDrawerToggle(this, drawerlayout, R.string.open, R.string.close)
         drawerlayout.addDrawerListener(toggle)
         toggle.syncState()
-
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
       Ivmenu.setOnClickListener {
@@ -129,8 +125,8 @@ class MainActivity : AppCompatActivity() {
                         shareMessage =
                             """
                             ${shareMessage}https://play.google.com/store/apps/details?id=$packageName
-                            
-                            
+
+
                             """.trimIndent()
                         shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
                         startActivity(Intent.createChooser(shareIntent, "choose one"))

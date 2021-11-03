@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493898807716",
+    "project_id": "mensxp-1c39f",
+    "storage_bucket": "mensxp-1c39f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493898807716:android:d354fa570c7d452e13e931",
+        "android_client_info": {
+          "package_name": "com.masai.sainath.mensxp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493898807716-7he8ksp6sp0t4eegspri1sf0do5m2kie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQuL4jvUw8TaRrym8g_neLGoQ1rPC2H_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493898807716-7he8ksp6sp0t4eegspri1sf0do5m2kie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
