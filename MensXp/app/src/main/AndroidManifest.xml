@@ -6,43 +6,51 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MensXp">
         <activity
-            android:name=".EditAddress"
+            android:name=".ui.activity.LoginActivity1"
+            android:launchMode="singleTop"
             android:exported="false" />
         <activity
-            android:name=".TermsAndCoditions"
+            android:name=".ui.activity.OptActivity1"
+            android:launchMode="singleTop"
             android:exported="false" />
         <activity
-            android:name=".PrivacyPolicy"
+            android:name=".ui.activity.EditAddress"
             android:exported="false" />
         <activity
-            android:name=".MyAddress"
+            android:name=".ui.activity.TermsAndCoditions"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MyAddress"
             android:exported="true" />
         <activity
-            android:name=".EditProfileAcitivity"
+            android:name=".ui.activity.EditProfileAcitivity"
             android:exported="true" />
         <activity
-            android:name=".WishListActivity"
+            android:name=".ui.activity.WishListActivity"
             android:exported="true" />
         <activity
-            android:name=".CartActivity"
+            android:name=".ui.activity.CartActivity"
             android:exported="true" />
         <activity
-            android:name=".OrdersActivity"
+            android:name=".ui.activity.OrdersActivity"
             android:exported="true" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".ui.activity.NotificationActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".ui.activity.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>

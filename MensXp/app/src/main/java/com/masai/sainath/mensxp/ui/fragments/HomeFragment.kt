@@ -1,14 +1,10 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
-import kotlinx.android.synthetic.main.fragment_home.*
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
@@ -21,6 +17,10 @@ import com.masai.sainath.mensxp.models.BrandModel
 import com.masai.sainath.mensxp.models.CatImgModel
 import com.masai.sainath.mensxp.models.ExclusiveModel
 import com.masai.sainath.mensxp.models.FashionModel
+import android.R
+
+
+
 
 
 class HomeFragment : Fragment() {
@@ -34,6 +34,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding=FragmentHomeBinding.inflate(layoutInflater, container, false)
+
+
 
         database= FirebaseFirestore.getInstance()
 

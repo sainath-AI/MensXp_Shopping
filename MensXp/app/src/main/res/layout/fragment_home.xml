@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    tools:context=".HomeFragment">
+    tools:context=".ui.fragments.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,6 +22,10 @@
                 android:id="@+id/RevCategories"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
+
+
+
+
 
 
 

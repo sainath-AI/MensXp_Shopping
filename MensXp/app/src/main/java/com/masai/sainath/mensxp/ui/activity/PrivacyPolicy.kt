@@ -1,9 +1,10 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.activity
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
+import com.masai.sainath.mensxp.R
 import kotlinx.android.synthetic.main.activity_privacy_policy.*
 
 class PrivacyPolicy : AppCompatActivity() {

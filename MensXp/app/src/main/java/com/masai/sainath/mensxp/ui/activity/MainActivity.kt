@@ -1,4 +1,4 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.activity
 
 import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
@@ -13,8 +13,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.masai.sainath.mensxp.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -49,63 +49,63 @@ class MainActivity : AppCompatActivity() {
 
 
             when(it.itemId){
-                R.id.nav_notifications->{
-                    intent= Intent(this,NotificationActivity::class.java)
+                R.id.nav_notifications ->{
+                    intent= Intent(this, NotificationActivity::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_orders->{
-                    intent= Intent(this,OrdersActivity::class.java)
+                R.id.nav_orders ->{
+                    intent= Intent(this, OrdersActivity::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_cart->{
-                    intent= Intent(this,CartActivity::class.java)
-                    startActivity(intent)
-
-                    true
-                }
-
-                R.id.nav_wishList->{
-                    intent= Intent(this,WishListActivity::class.java)
-                    startActivity(intent)
-
-                    true
-                }
-                R.id.nav_editprofile->{
-                    intent= Intent(this,EditProfileAcitivity::class.java)
+                R.id.nav_cart ->{
+                    intent= Intent(this, CartActivity::class.java)
                     startActivity(intent)
 
                     true
                 }
 
-                R.id.nav_bookmarks->{
-                    intent= Intent(this,OrdersActivity::class.java)
+                R.id.nav_wishList ->{
+                    intent= Intent(this, WishListActivity::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_address->{
-                    intent= Intent(this,MyAddress::class.java)
+                R.id.nav_editprofile ->{
+                    intent= Intent(this, EditProfileAcitivity::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_Terms->{
-                    intent= Intent(this,TermsAndCoditions::class.java)
+
+                R.id.nav_bookmarks ->{
+                    intent= Intent(this, OrdersActivity::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_policy->{
-                    intent= Intent(this,PrivacyPolicy::class.java)
+                R.id.nav_address ->{
+                    intent= Intent(this, MyAddress::class.java)
                     startActivity(intent)
 
                     true
                 }
-                R.id.nav_loveApp->{
+                R.id.nav_Terms ->{
+                    intent= Intent(this, TermsAndCoditions::class.java)
+                    startActivity(intent)
+
+                    true
+                }
+                R.id.nav_policy ->{
+                    intent= Intent(this, PrivacyPolicy::class.java)
+                    startActivity(intent)
+
+                    true
+                }
+                R.id.nav_loveApp ->{
                     val uri = Uri.parse("market://details?id=$packageName")
                     val myAppLinkToMarket = Intent(Intent.ACTION_VIEW, uri)
                     try {
@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity() {
 
                     true
                 }
-                R.id.nav_inviteFrnds->{
+                R.id.nav_inviteFrnds ->{
                     try {
                         val shareIntent = Intent(Intent.ACTION_SEND)
                         shareIntent.type = "text/plain"
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
                     true
                 }
-                R.id.nav_logout->{
+                R.id.nav_logout ->{
 
 
                     true

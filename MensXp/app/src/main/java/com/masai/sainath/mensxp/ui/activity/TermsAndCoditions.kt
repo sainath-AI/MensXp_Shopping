@@ -1,10 +1,10 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.activity
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import kotlinx.android.synthetic.main.activity_privacy_policy.*
+import com.masai.sainath.mensxp.R
 import kotlinx.android.synthetic.main.activity_terms_and_coditions.*
 
 class TermsAndCoditions : AppCompatActivity() {

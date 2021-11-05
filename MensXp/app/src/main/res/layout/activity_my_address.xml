@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MyAddress">
+    tools:context=".ui.activity.MyAddress">
 
 
     <androidx.cardview.widget.CardView
@@ -50,6 +50,13 @@
         android:text="Add new Address"
         android:layout_margin="20dp"
         android:padding="7dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RevAddress"
         />
 
 

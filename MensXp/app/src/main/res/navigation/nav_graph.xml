@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.masai.sainath.mensxp.HomeFragment"
+        android:name="com.masai.sainath.mensxp.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.masai.sainath.mensxp.CategoryFragment"
+        android:name="com.masai.sainath.mensxp.ui.fragments.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
     <fragment
         android:id="@+id/myStoreFragment"
-        android:name="com.masai.sainath.mensxp.MyStoreFragment"
+        android:name="com.masai.sainath.mensxp.ui.fragments.MyStoreFragment"
         android:label="fragment_my_store"
         tools:layout="@layout/fragment_my_store" />
     <fragment
         android:id="@+id/feedFragment"
-        android:name="com.masai.sainath.mensxp.FeedFragment"
+        android:name="com.masai.sainath.mensxp.ui.fragments.FeedFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed" />
     <fragment
         android:id="@+id/youFragment"
-        android:name="com.masai.sainath.mensxp.YouFragment"
+        android:name="com.masai.sainath.mensxp.ui.fragments.YouFragment"
         android:label="fragment_you"
         tools:layout="@layout/fragment_you" />
 </navigation>

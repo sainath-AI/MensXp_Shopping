@@ -1,18 +1,14 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
-import com.masai.sainath.mensxp.adapters.FashionAdapter
 import com.masai.sainath.mensxp.adapters.FragmentCatAdapter
 import com.masai.sainath.mensxp.databinding.FragmentCategoryBinding
-import com.masai.sainath.mensxp.databinding.FragmentHomeBinding
-import com.masai.sainath.mensxp.models.FashionModel
 import com.masai.sainath.mensxp.models.FragmentCategoryModel
 
 

@@ -1,4 +1,4 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.fragments
 
 import android.os.Build
 import android.os.Bundle

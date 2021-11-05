@@ -1,10 +1,11 @@
-package com.masai.sainath.mensxp
+package com.masai.sainath.mensxp.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.masai.sainath.mensxp.R
 
 class MyStoreFragment : Fragment() {
 
