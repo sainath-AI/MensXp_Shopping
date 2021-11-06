@@ -157,26 +157,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
         android:text="Don't get the OTP?"
-        app:layout_constraintEnd_toStartOf="@+id/tvResendBtn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etC6" />
+      />
 
     <TextView
         android:id="@+id/tvResendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="20dp"
         android:text="RESEND OTP"
-        android:textColor="#808080"
+        android:textColor="@color/Orange"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+      />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -188,8 +182,9 @@
             android:layout_gravity="bottom"
             android:layout_margin="15dp"
             android:padding="10dp"
-            android:backgroundTint="#808080"
+            android:backgroundTint="@color/Orange"
             android:text="Verify"
+            android:textSize="16sp"
             />
     </LinearLayout>
 

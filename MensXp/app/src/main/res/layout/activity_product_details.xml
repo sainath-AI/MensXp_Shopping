@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ProductDetailsActivity">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:elevation="7dp"
+        app:cardElevation="7dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/Ivmenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/heart"
+                    android:layout_marginRight="20dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/yourcart"
+                    android:layout_marginRight="20dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/ImgProductDetails"
+        android:scaleType="centerCrop"
+        android:background="@drawable/dummy"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:text="Title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/TvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Lorem ipsum dolor sit amet \nconsectetur "
+        android:textSize="14sp"
+
+        />
+    <TextView
+        android:id="@+id/TvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text=" Rs.459"
+        android:textSize="19sp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/border1"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="40dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

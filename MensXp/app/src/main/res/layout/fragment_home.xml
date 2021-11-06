@@ -24,6 +24,30 @@
         </LinearLayout>
 
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:id="@+id/slider"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_below="@id/linear1"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.denzcoskun.imageslider.ImageSlider-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="220dp"-->
+<!--                app:iss_auto_cycle="true"-->
+<!--                android:id="@+id/ImageSlider"-->
+<!--                app:iss_delay="0"-->
+<!--                app:iss_period="1000"-->
+<!--                app:iss_placeholder="@color/white"-->
+<!--                app:iss_error_image="@color/white"-->
+
+
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+
 
 
 

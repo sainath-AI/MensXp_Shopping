@@ -18,9 +18,10 @@ import com.masai.sainath.mensxp.models.CatImgModel
 import com.masai.sainath.mensxp.models.ExclusiveModel
 import com.masai.sainath.mensxp.models.FashionModel
 import android.R
-
-
-
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
@@ -81,6 +82,14 @@ class HomeFragment : Fragment() {
             binding.RevFashion.adapter= FashionAdapter(requireContext(),listOfFashion)
 
         }
+
+
+//        val imageList=ArrayList<SlideModel>()
+//        imageList.add(SlideModel("https://img.mensxp.com/media/shop/template/2021/nov/damensch-shop-banner-1635921095.jpeg?w=2380&h=982&cc=1&q=75",ScaleTypes.FIT))
+//        imageList.add(SlideModel("https://img.mensxp.com/media/shop/template/2021/nov/mud-curated-box-banner-shop-1635789790.gif?w=2380&h=982&cc=1&q=75",ScaleTypes.FIT))
+//        imageList.add(SlideModel("https://img.mensxp.com/media/shop/template/2021/oct/whisky-shop-mobile-banner-1635491801.jpeg?w=2380&h=982&cc=1&q=75",ScaleTypes.FIT))
+//        imageList.add(SlideModel("https://img.mensxp.com/media/shop/template/2021/oct/ray-ban-mensxp-talent-banner-2200x906-1635404402.jpeg?w=2380&h=982&cc=1&q=75",ScaleTypes.FIT))
+//        ImageSlider.setImageList(imageList,ScaleTypes.FIT)
         return binding.root
     }
 

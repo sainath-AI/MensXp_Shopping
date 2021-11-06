@@ -8,6 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         app:cardElevation="20dp"
+        android:elevation="20dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -19,6 +20,7 @@
                 android:id="@+id/ImgbrandSpot"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:scaleType="centerCrop"
                 android:background="@drawable/usermenxzp"
                 />
 

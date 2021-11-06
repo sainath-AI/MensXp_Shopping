@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.masai.sainath.mensxp.R
 import com.masai.sainath.mensxp.models.CatImgModel
+import com.masai.sainath.mensxp.ui.activity.ProductActivity
 import de.hdodenhof.circleimageview.CircleImageView
 
 class CategoryImgAdapter( val context: Context, val listOfCategories: ArrayList<CatImgModel>) : RecyclerView.Adapter<CategoryImgAdapter.CategoryImgViewHolder>() {
@@ -30,11 +31,13 @@ class CategoryImgAdapter( val context: Context, val listOfCategories: ArrayList<
     override fun onBindViewHolder(holder: CategoryImgViewHolder, position: Int) {
         Glide.with(context).load(listOfCategories[position].link).into(holder.imageView)
         holder.name.text=listOfCategories[position].type
-//        holder.itemView.setOnClickListener( View.OnClickListener {
-//            val intent= Intent(requireContext,Wallpaper::class.java)
-//            intent.putExtra("link",listBestofTheMoth[position].link)
-//            context.startActivity(intent)
-      //  })
+        holder.itemView.setOnClickListener {
+            val intent= Intent(context, ProductActivity::class.java)
+            intent.putExtra("uid",listOfCategories[position].id)
+            intent.putExtra("link",listOfCategories[position].link)
+            intent.putExtra("type",listOfCategories[position].type)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

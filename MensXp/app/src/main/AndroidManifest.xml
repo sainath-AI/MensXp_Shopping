@@ -12,13 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MensXp">
         <activity
-            android:name=".ui.activity.LoginActivity1"
-            android:launchMode="singleTop"
+            android:name=".ui.activity.ProductListActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.OptActivity1"
-            android:launchMode="singleTop"
+            android:name=".ui.activity.ProductDetailsActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.activity.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.LoginActivity1"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.OptActivity1"
+            android:exported="false"
+            android:launchMode="singleTop" />
         <activity
             android:name=".ui.activity.EditAddress"
             android:exported="false" />

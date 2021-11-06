@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/drawable/border1.xml" value="0.15791505791505792" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/drawable/border_left.xml" value="0.1527777777777778" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/drawable/gradient.xml" value="0.1527777777777778" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/drawable/tab_color.xml" value="0.1" />
@@ -21,6 +22,10 @@
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_opt2.xml" value="0.163671875" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_orders.xml" value="0.17421875" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_privacy_policy.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_product.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_product2.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_product_details.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_product_list.xml" value="0.1" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_splash_screen.xml" value="0.15715579710144928" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_terms_and_coditions.xml" value="0.163671875" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/activity_wish_list.xml" value="0.17421875" />
@@ -35,6 +40,7 @@
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/item_exclusive.xml" value="0.17421875" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/item_fashion.xml" value="0.17421875" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/item_frag_category.xml" value="0.17421875" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/item_productlist.xml" value="0.2" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/menu/bottom_menu.xml" value="0.17647058823529413" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/MensXp_Shopping/MensXp/app/src/main/res/menu/nav_drawer.xml" value="0.264" />
