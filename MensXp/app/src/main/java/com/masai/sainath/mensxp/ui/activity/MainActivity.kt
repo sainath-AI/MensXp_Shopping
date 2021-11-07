@@ -26,6 +26,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Cart.setOnClickListener {
+            intent = Intent(this,CartActivity::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+        Wishlist.setOnClickListener {
+            intent = Intent(this,WishListActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
         val navController = findNavController(R.id.fragmentContainerView)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.BottomNavView)
         bottomNavigationView.setupWithNavController(navController)

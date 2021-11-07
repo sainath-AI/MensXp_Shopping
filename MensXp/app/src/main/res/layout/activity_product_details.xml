@@ -63,6 +63,13 @@
         android:scaleType="centerCrop"
         android:background="@drawable/dummy"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/ImgUrl"
+
+        />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -101,6 +108,7 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/BtnAddToCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add to Cart"
@@ -116,6 +124,7 @@
             android:layout_marginBottom="10dp"
             />
         <Button
+            android:id="@+id/BtnBuyNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buy Now"

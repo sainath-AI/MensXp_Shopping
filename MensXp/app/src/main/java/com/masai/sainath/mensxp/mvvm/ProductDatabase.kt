@@ -1,29 +1,29 @@
-package com.masai.sainath.mensxp.roomdata
+package com.masai.sainath.mensxp.mvvm
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.masai.sainath.mensxp.mvvm.ProductDao
 
-@Database(entities = [AddressEntity::class],version = 1)
-abstract class Roomdb : RoomDatabase()  {
 
-    abstract fun getMoneyDao() : AddressDao
+@Database(entities = [ProductEntity::class],version = 1)
+abstract class ProductRoomdb : RoomDatabase()  {
+
+    abstract fun getProductDao() : ProductDao
 
     companion object {
 
-        private  var INSTANCE : Roomdb?=null
+        private  var INSTANCE : ProductRoomdb?=null
 
 
-        fun getDatabase(context : Context) : Roomdb{
+        fun getDatabase(context : Context) : ProductRoomdb{
 
 
             if(INSTANCE == null){
 
                 val builder = Room.databaseBuilder(
-                    context.applicationContext,Roomdb::class.java,
-                    "address_db")
+                    context.applicationContext,ProductRoomdb::class.java,
+                    "product_db")
 
                 builder.fallbackToDestructiveMigration()
                 INSTANCE = builder.build()

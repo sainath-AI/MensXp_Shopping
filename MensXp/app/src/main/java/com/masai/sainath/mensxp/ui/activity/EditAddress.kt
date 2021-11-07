@@ -3,7 +3,6 @@ package com.masai.sainath.mensxp.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.masai.sainath.mensxp.R
 import com.masai.sainath.mensxp.roomdata.AddressDao
 import com.masai.sainath.mensxp.roomdata.AddressEntity
@@ -65,7 +64,6 @@ class EditAddress : AppCompatActivity() {
 //            etEditAmount.visibility = View.VISIBLE
 //            true
 //        }
-
 //        save.setOnLongClickListener {
 //
 //            var intent   = Intent(this, MyAddress::class.java)

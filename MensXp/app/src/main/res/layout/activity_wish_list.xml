@@ -86,7 +86,6 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imgCart"
             android:text="Start Shopping"
             android:padding="10dp"
             android:backgroundTint="#ff6f00"

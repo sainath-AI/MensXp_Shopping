@@ -42,27 +42,32 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imgCart"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RevCart"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/cardView1"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/imgcart" />
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+
+        />
+
+
+
+
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/BtnContinue"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgCart"
-        android:text="Start Shopping"
-        android:padding="10dp"
-        android:backgroundTint="#ff6f00"
-        android:textSize="14sp"
-        android:layout_marginHorizontal="115dp"
-
-
-/>
+        android:visibility="invisible"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Continue"
+        android:layout_alignParentBottom="true"
+        />
 
 
 
