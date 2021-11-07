@@ -52,6 +52,15 @@
 
         />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cartAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/order"
+        android:visibility="invisible"
+
+        />
+
 
 
 
@@ -65,7 +74,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:text="Continue"
+        android:text="Buy Now"
         android:layout_alignParentBottom="true"
         />
 

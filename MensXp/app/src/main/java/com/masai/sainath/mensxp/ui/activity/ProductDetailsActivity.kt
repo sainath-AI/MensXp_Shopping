@@ -3,11 +3,13 @@ package com.masai.sainath.mensxp.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import com.bumptech.glide.Glide
 import com.masai.sainath.mensxp.databinding.ActivityProductDetailsBinding
 import com.masai.sainath.mensxp.mvvm.ProductDao
 import com.masai.sainath.mensxp.mvvm.ProductEntity
 import com.masai.sainath.mensxp.mvvm.ProductRoomdb
+import com.masai.sainath.mensxp.mvvm.ProductViewModel
 import kotlinx.android.synthetic.main.activity_product_details.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -15,9 +17,10 @@ import kotlinx.coroutines.launch
 
 class ProductDetailsActivity : AppCompatActivity() {
 
-    lateinit var roomDb : ProductRoomdb
+//    lateinit var roomDb : ProductRoomdb
+//    lateinit var productDao: ProductDao
 
-    lateinit var productDao: ProductDao
+    val viewModel: ProductViewModel by viewModels()
 
     lateinit var binding: ActivityProductDetailsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,8 +42,8 @@ class ProductDetailsActivity : AppCompatActivity() {
         TvPrice.text= "Rs. ${price.toString()}"
         ImgUrl.text=imgUrl
 
-        roomDb = ProductRoomdb.getDatabase(this)
-        productDao= roomDb.getProductDao()
+//        roomDb = ProductRoomdb.getDatabase(this)
+//        productDao= roomDb.getProductDao()
 
 
         BtnAddToCart.setOnClickListener {
@@ -57,7 +60,7 @@ class ProductDetailsActivity : AppCompatActivity() {
             val productEntity = ProductEntity(title, desc,imgurl,price )
 
             CoroutineScope(Dispatchers.IO).launch {
-                productDao.saveProduct(productEntity)
+                viewModel.AddProduct(productEntity)
             }
 
 

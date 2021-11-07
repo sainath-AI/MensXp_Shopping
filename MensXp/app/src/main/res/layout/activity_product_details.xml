@@ -32,6 +32,14 @@
                 android:layout_marginStart="10dp"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/ImgUrl"
+
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:gravity="right"
@@ -63,13 +71,7 @@
         android:scaleType="centerCrop"
         android:background="@drawable/dummy"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:id="@+id/ImgUrl"
 
-        />
 
     <TextView
         android:id="@+id/tvTitle"
