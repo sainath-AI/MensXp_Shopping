@@ -13,6 +13,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 import com.masai.sainath.mensxp.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
@@ -21,21 +22,23 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
 
+    lateinit var mAuth: FirebaseAuth
+
     @SuppressLint("RtlHardcoded")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        mAuth = FirebaseAuth.getInstance()
+
         Cart.setOnClickListener {
             intent = Intent(this,CartActivity::class.java)
             startActivity(intent)
-            finish()
 
         }
         Wishlist.setOnClickListener {
             intent = Intent(this,WishListActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
 
@@ -150,7 +153,12 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_logout ->{
-
+                    mAuth.signOut()
+                    intent= Intent(this,LoginActivity1::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(intent)
+                    finish()
 
                     true
                 }

@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.masai.sainath.mensxp.R
 import com.masai.sainath.mensxp.databinding.FragmentHomeBinding
 import com.masai.sainath.mensxp.databinding.FragmentYouBinding
@@ -22,11 +23,16 @@ class YouFragment : Fragment() {
 
     lateinit var binding: FragmentYouBinding
 
+    lateinit var mAuth: FirebaseAuth
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding= FragmentYouBinding.inflate(layoutInflater, container, false)
+
+        mAuth = FirebaseAuth.getInstance()
 
         binding.linear1.setOnClickListener {
           val  intent = Intent(activity,NotificationActivity::class.java)
@@ -90,6 +96,11 @@ class YouFragment : Fragment() {
         }
         binding.layout6.setOnClickListener {
 
+            mAuth.signOut()
+            val intent= Intent(activity,LoginActivity1::class.java)
+             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
 
         }
 //        val bundle=arguments
